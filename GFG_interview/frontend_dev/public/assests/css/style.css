@@ -1,0 +1,134 @@
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 30px;
+  border: 1px solid cadetblue;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  width: 525px;
+  height: auto;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+}
+
+.card .inputBox {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .inputBox input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: transparent;
+  color: #555;
+  font-weight: 500;
+}
+
+.card .inputBox i {
+  color: #555;
+  font-size: 20px;
+}
+
+.card h2 {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 17px;
+  color: #333;
+}
+
+.card a {
+  color: #555;
+  text-decoration: none;
+}
+
+.card button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 20px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.09);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card .btn-login {
+  background: cornflowerblue;
+  font-size: 18px;
+  color: white;
+}
+
+.card .section {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+}
+
+.card .btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.card .btn-google p {
+  width: 100%;
+}
+
+.card .btn-facebook p {
+  width: 100%;
+}
+
+.card .separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card .separator .line {
+  width: 25%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
