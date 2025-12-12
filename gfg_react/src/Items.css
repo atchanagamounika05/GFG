@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px;
+  .child {
+    border: 2px solid black;
+    gap: 8px;
+    padding: 3px;
+    .child1 {
+      padding: 5px;
+      font-weight: 300;
+    }
+  }
+  .input {
+    width: 200px;
+  }
+}
