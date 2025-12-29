@@ -400,16 +400,34 @@ console.log(res); */
 
 //flat an array
 
-function flat(arr) {
-  res = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (Array.isArray(arr[i])) {
-      res = res.concat(flat(arr[i]));
-    } else {
-      res.push(arr[i]);
-    }
-  }
-  return res;
-}
+// function flat(arr) {
+//   res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Array.isArray(arr[i])) {
+//       res = res.concat(flat(arr[i]));
+//     } else {
+//       res.push(arr[i]);
+//     }
+//   }
+//   return res;
+// }
 
-console.log(flat([1, 2, 3, [4, [5, 6]]]));
+// console.log(flat([1, 2, 3, [4, [5, 6]]]));
+
+//flat an array up to the depth
+// let arr = [1,[2,[3,4]]]
+// let level = 1
+
+// function flatArray(arr,level){
+//     let res = []
+//     for(let i=0;i<arr.length;i++){
+    
+//         if(Array.isArray(arr[i]) && arr[i]!== null && level > 0){
+//           res= res.concat(flatArray(arr[i],level = level-1))
+//         }else{
+//             res.push(arr[i])
+//         }
+//     }
+//     return res
+// }
+// console.log(flatArray(arr,level))
