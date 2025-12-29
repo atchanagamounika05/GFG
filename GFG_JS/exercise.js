@@ -450,7 +450,7 @@ console.log(obj); */
 // result.push(arr5[0]);
 // console.log(result);
 
-//var - 1,2,3,4,5 after 1 sec each
+//var - 0,1,2,3,4 all at once after 1 sec
 function print (){
 for(var i=0;i<5;i++){
     setTimeout(function(i){
