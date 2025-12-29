@@ -435,17 +435,27 @@ arr1.reduce((acc, cur) => {
 console.log(obj); */
 // { name: "John", age: "30" }
 
-let arr5 = [["name", "age"][("John", "30")]];
+// let arr5 = [["name", "age"][("John", "30")]];
 // [("name", "john")][("age", "30")];
-console.log(arr5);
-let keys = arr5[0];
-let values = arr5.unshift();
-console.log(keys, values);
+// console.log(arr5);
+// let keys = arr5[0];
+// let values = arr5.unshift();
+// console.log(keys, values);
 
 // "John", "30"; // , operator - Evaluates both operands and Returns the last one. -> 30
 //["name", "age"]["30"] - there is no 30th, only 0,1 are name,age -> undefined
 
-console.log(arr5);
-let result = [];
-result.push(arr5[0]);
-console.log(result);
+// console.log(arr5);
+// let result = [];
+// result.push(arr5[0]);
+// console.log(result);
+
+//var - 1,2,3,4,5 after 1 sec each
+function print (){
+for(var i=0;i<5;i++){
+    setTimeout(function(i){
+        console.log(i)
+    },1000,i)
+}
+}
+print()
